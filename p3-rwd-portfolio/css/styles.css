@@ -1,0 +1,162 @@
+/********************
+YOUR STYLES
+*******************/
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+body{
+background: #F29856;
+}
+
+h1{
+  font-family: 'Cabin', sans-serif;
+  color:#E0EFFD;
+  text-decoration-color: #E18728;
+
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: .1em;
+  padding: 2px;
+
+}
+
+pl{
+    height: 1em;
+    padding: .2em .5em 0 .5em;
+    opacity: .4;
+}
+
+
+.portfolio{
+    width: 33%;
+	display: inline-block;
+	float: left;
+}
+	
+#gallery li{
+   display:inline-block;
+   margin:9px;
+   clear:both;
+   }
+
+#gallery li a img:hover{
+   border:none;
+}
+
+
+/*lightbox stuff*/
+a.lightbox img {
+    border:1px solid gray;
+    border-radius:0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    max-width: 360px;
+	width: 120%;
+    height: auto;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.lightbox-target {
+position: fixed;
+top: 0;
+left:0;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+transition: opacity .6s ease-in-out;
+overflow: hidden;
+margin-bottom:0px
+}
+
+
+.lightbox-target img{
+margin: auto;
+position: fixed;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+transition: .5s ease-in-out;
+border-radius:0px;
+}
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: fixed;
+top: -80px;
+right: 0;
+transition: .7s ease-out-in;
+}
+
+/*the exit*/
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+transform:rotate(45deg);
+}
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: gray;
+position: absolute;
+left: 26px;
+top:10px;
+transform:rotate(-50deg);
+}
+
+.lightbox-target:target {
+opacity: 4;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+/********************
+MEDIA QUERIES
+*******************/
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+}
+
+/* Mobile */
+@media (min-width: 480px) {
+
+}
